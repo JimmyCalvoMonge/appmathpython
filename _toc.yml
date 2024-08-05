@@ -1,0 +1,15 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Optimization
+    numbered: true
+    chapters:
+      - file: src/optimization/linear_programming
+      - file: src/optimization/gradient_descent
+  - caption: Differential Equations
+    numbered: true
+    chapters:
+      - file: src/diffeq/diffeqexamples
