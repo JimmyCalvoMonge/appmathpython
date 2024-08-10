@@ -1,0 +1,54 @@
+### Using `np.gradient`
+
+To compute derivatives, `Numpy` has the `gradient` method which uses a second order approximation for the derivative at an interior point of an interval. 
+
+Specifically, it uses the fact that the derivative $f'(x)$ can be approximated with the formula:
+
+$
+f'(x) = \frac{f(x+h)-f(x-h)}{2h} + \mathcal{O}(h^2).
+$
+
+For points that are at the extremes of an interval, we can use the formulas:
+
+$
+f'(x) = \frac{f(x+h)-f(x)}{h} + \mathcal{O}(h) \quad \text{For the left extreme of an interval}.
+$
+
+and
+
+$
+f'(x) = \frac{f(x)-f(x-h)}{h} + \mathcal{O}(h) \quad \text{For the right extreme of an interval}.
+$
+
+If you use the method `np.gradient` with an array of values $[y_1, \cdots, y_1]$, then, by default, `Numpy` assumes you have provided value $y_1=f(x_1), \cdots, y_n=f(x_n)$ where $x_1, \cdots, x_n$ are separated by a distance of $h=1$ between each other, that is: $x_2=x_1+h$, $x_3=x_2+h$ and so on. So it will apply the formulas above using that value for $h$. Let's see an example.
+
+np.gradient(np.array([0, 3, 2, 4.5, 7]))
+
+Verifying:
+
+- $\frac{3-0}{1} = 3$.
+- $\frac{2-0}{2} = 1$.
+- $\frac{4.5-3}{2} = 0.75$.
+- $\frac{7-2}{2} = 2.5$.
+- $\frac{7-4.5}{1} = 2.5$.
+
+*In this case x+h is the value that follows x in the sequence, and x-h is the previous one.*
+  
+If we put an $h$ parameter in this function we can control this behavior:
+
+np.gradient(np.array([0, 3, 2, 4.5, 7]), 0.5) # Verify that these are the calculations obtained by putting h=0.5 in the above formulas.
+
+Clearly this calculation becomes more trustworthy as $h$ becomes smaller. To compute a gradient accurately with `Numpy` you should provide the values of $f(x)$ at a list of $x$ values each separated by a distance of a sufficiently small $h$. Let's find the gradient of the function of the above example.
+
+*Notes:*
+
+- Another resource to keep exploring the `np.gradient` method: [Numpy Gradient: Returning the Gradient of N-dimensional Array](https://www.askpython.com/python-modules/numpy/numpy-gradient).
+
+- The `np.gradient` can also be applied to higher dimensional functions (arrays). The same technique applies and we can use the same approximation functions for partial derivatives. For example:
+
+$
+\frac{\partial f}{\partial x_i}(x) = \frac{f(x+ he_i) - f(x-he_i)}{2h},
+$
+where $e_i$ is the $i$-th elementary vector.
+
+For example, this assumes to send an array of the form $\{f(x_0 + kh, x_0 + kh)\}$ for $k=0,1$.
