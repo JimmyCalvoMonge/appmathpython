@@ -1,0 +1,225 @@
+chapters:
+  - title: "General Statistics"
+    short_title: "statistics"
+    sections:
+      - Descriptive Statistics
+      - Inferential Statistics
+      - Hypothesis Testing
+      - Analysis of Variance (ANOVA)
+      - Correlation and Regression
+  - title: "General Probability"
+    short_title: "probability"
+    sections:
+      - Basic Probability Rules
+      - Conditional Probability
+      - Random Variables
+      - Probability Distributions
+      - Law of Large Numbers
+  - title: "Time Series Analysis"
+    short_title: "time_series"
+    sections:
+      - Stationarity and Trends
+      - Autoregressive Models
+      - Moving Average Models
+      - Seasonal Decomposition
+      - Forecasting Techniques
+  - title: "Bayesian Analysis"
+    short_title: "bayesian"
+    sections:
+      - Bayes" Theorem Basics
+      - Priors and Posteriors
+      - Conjugate Priors
+      - Markov Chain Monte Carlo (MCMC)
+      - Bayesian Model Selection
+  - title: "Stochastic Processes"
+    short_title: "stochastic_proc"
+    sections:
+      - Markov Chains
+      - Poisson Processes
+      - Brownian Motion
+      - Stochastic Differential Equations
+      - Applications of Stochastic Models
+  - title: "Non-Parametric Statistics"
+    short_title: "non_param_stats"
+    sections:
+      - Rank-Based Tests
+      - Kernel Density Estimation
+      - Non-Parametric Regression
+      - Resampling Methods
+      - Applications in Non-Normal Data
+  - title: "General Numerical Methods"
+    short_title: "num_methods"
+    sections:
+      - Root-Finding Techniques
+      - Numerical Integration
+      - Numerical Differentiation
+      - Error Analysis
+      - Adaptive Algorithms
+  - title: "Numerical Linear Algebra"
+    short_title: "num_linear_algebra"
+    sections:
+      - Matrix Decompositions
+      - Iterative Solvers
+      - Eigenvalue Problems
+      - Sparse Matrix Techniques
+      - Stability in Computations
+  - title: "Optimization"
+    short_title: "optimization"
+    sections:
+      - Linear Programming
+      - Nonlinear Programming
+      - Convex Optimization
+      - Integer Programming
+      - Gradient-Based Methods
+  - title: "Ordinary Differential Equations"
+    short_title: "odes"
+    sections:
+      - Initial Value Problems
+      - Boundary Value Problems
+      - Numerical Methods for ODEs
+      - Stability Analysis
+      - Systems of ODEs
+  - title: "Partial Differential Equations"
+    short_title: "pdes"
+    sections:
+      - Classification of PDEs
+      - Analytical Solutions
+      - Finite Difference Methods
+      - Finite Element Methods
+      - Applications of PDEs
+  - title: "Classification Models in Machine Learning"
+    short_title: "classification_ml"
+    sections:
+      - Decision Trees
+      - Support Vector Machines
+      - Neural Networks for Classification
+      - Ensemble Methods
+      - Performance Metrics
+  - title: "Regression Models in Machine Learning"
+    short_title: "regression_ml"
+    sections:
+      - Linear Regression
+      - Polynomial Regression
+      - Ridge and Lasso Regression
+      - Logistic Regression
+      - Model Evaluation Techniques
+  - title: "Deep Learning"
+    short_title: "deep_learning"
+    sections:
+      - Neural Network Architectures
+      - Convolutional Neural Networks
+      - Recurrent Neural Networks
+      - Optimization in Deep Learning
+      - Generative Adversarial Networks
+  - title: "Reinforcement Learning"
+    short_title: "reinforcement_learn"
+    sections:
+      - Markov Decision Processes
+      - Q-Learning
+      - Policy Gradient Methods
+      - Deep Reinforcement Learning
+      - Applications in Game AI
+  - title: "Clustering Theory"
+    short_title: "clustering"
+    sections:
+      - K-Means Clustering
+      - Hierarchical Clustering
+      - Density-Based Clustering
+      - Model-Based Clustering
+      - Cluster Validation
+  - title: "Dimensionality Reduction Techniques"
+    short_title: "dim_reduction"
+    sections:
+      - Principal Component Analysis (PCA)
+      - Singular Value Decomposition (SVD)
+      - t-SNE and UMAP
+      - Feature Selection Methods
+      - Applications in High-Dimensional Data
+  - title: "Information Theory"
+    short_title: "information_theory"
+    sections:
+      - Entropy and Mutual Information
+      - Shannon"s Theorems
+      - Data Compression
+      - Information Channels
+      - Applications in Machine Learning
+  - title: "Graph Theory and Network Analysis"
+    short_title: "graph_theory"
+    sections:
+      - Graph Representations
+      - Graph Algorithms
+      - Centrality Measures
+      - Community Detection
+      - Applications in Network Science
+  - title: "Game Theory"
+    short_title: "game_theory"
+    sections:
+      - Nash Equilibria
+      - Zero-Sum Games
+      - Cooperative Games
+      - Evolutionary Game Theory
+      - Applications in Economics
+  - title: "Fourier Analysis"
+    short_title: "fourier"
+    sections:
+      - Fourier Series
+      - Fourier Transform
+      - Discrete Fourier Transform
+      - Fast Fourier Transform
+      - Applications in Signal Processing
+  - title: "Natural Language Processing"
+    short_title: "nlp"
+    sections:
+      - Text Preprocessing
+      - Word Embeddings
+      - Sequence Models
+      - Transformer Architectures
+      - Applications in NLP
+  - title: "Generative Artificial Intelligence"
+    short_title: "generative"
+    sections:
+      - Variational Autoencoders
+      - Generative Adversarial Networks
+      - Diffusion Models
+      - Text-to-Image Models
+      - Ethical Considerations
+  - title: "Operations Research"
+    short_title: "operations_research"
+    sections:
+      - Optimization Models
+      - Queuing Theory
+      - Simulation Methods
+      - Supply Chain Optimization
+      - Decision Analysis
+  - title: "Scientific Computing"
+    short_title: "scientific_computing"
+    sections:
+      - Numerical Simulations
+      - High-Performance Computing
+      - Parallel Algorithms
+      - Visualization Techniques
+      - Applications in Science
+  - title: "Applications to Biology and Epidemiology"
+    short_title: "app_biology"
+    sections:
+      - Population Dynamics
+      - Disease Modeling
+      - Bioinformatics Algorithms
+      - Statistical Genetics
+      - Computational Neuroscience
+  - title: "Applications to Finance"
+    short_title: "app_finance"
+    sections:
+      - Portfolio Optimization
+      - Risk Management
+      - Option Pricing Models
+      - Algorithmic Trading
+      - Financial Time Series Analysis
+  - title: "Applications to Material Science and Physics"
+    short_title: "app_physics"
+    sections:
+      - Molecular Dynamics Simulations
+      - Computational Quantum Mechanics
+      - Finite Element Analysis
+      - Phase Field Modeling
+      - Applications in Condensed Matter Physics
