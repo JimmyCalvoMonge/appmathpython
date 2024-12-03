@@ -4,13 +4,172 @@
 format: jb-book
 root: intro
 parts:
+
+  - caption: General Statistics
+    numbered: true
+    chapters:
+      - file: src/statistics/sample_notebook
+        
+
+  - caption: General Probability
+    numbered: true
+    chapters:
+      - file: src/probability/sample_notebook
+        
+
+  - caption: Time Series Analysis
+    numbered: true
+    chapters:
+      - file: src/time_series/sample_notebook
+
+
+  - caption: Bayesian Analysis
+    numbered: true
+    chapters:
+      - file: src/bayesian/sample_notebook
+
+
+  - caption: Stochastic Processes
+    numbered: true
+    chapters:
+      - file: src/stochastic_proc/sample_notebook
+
+
+  - caption: Non-Parametric Statistics
+    numbered: true
+    chapters:
+      - file: src/non_param_stats/sample_notebook
+
+
+  - caption: General Numerical Methods
+    numbered: true
+    chapters:
+      - file: src/num_methods/sample_notebook
+
+
+  - caption: Numerical Linear Algebra
+    numbered: true
+    chapters:
+      - file: src/num_linear_algebra/sample_notebook
+
+
   - caption: Optimization
     numbered: true
     chapters:
+      - file: src/optimization/sample_notebook
       - file: src/optimization/linear_programming
       - file: src/optimization/gradient_descent
-      - file: src/optimization/sample_notebook
-  - caption: Differential Equations
+
+
+  - caption: Ordinary Differential Equations
     numbered: true
     chapters:
-      - file: src/diffeq/diffeqexamples
+      - file: src/odes/sample_notebook
+
+
+  - caption: Partial Differential Equations
+    numbered: true
+    chapters:
+      - file: src/pdes/sample_notebook
+
+
+  - caption: Classification Models in Machine Learning
+    numbered: true
+    chapters:
+      - file: src/classification_ml/sample_notebook
+
+
+  - caption: Regression Models in Machine Learning
+    numbered: true
+    chapters:
+      - file: src/regression_ml/sample_notebook
+
+
+  - caption: Deep Learning
+    numbered: true
+    chapters:
+      - file: src/deep_learning/sample_notebook
+
+
+  - caption: Reinforcement Learning
+    numbered: true
+    chapters:
+      - file: src/reinforcement_learn/sample_notebook
+
+
+  - caption: Clustering Theory
+    numbered: true
+    chapters:
+      - file: src/clustering/sample_notebook
+
+
+  - caption: Dimensionality Reduction Techniques
+    numbered: true
+    chapters:
+      - file: src/dim_reduction/sample_notebook
+
+
+  - caption: Information Theory
+    numbered: true
+    chapters:
+      - file: src/information_theory/sample_notebook
+
+
+  - caption: Graph Theory and Network Analysis
+    numbered: true
+    chapters:
+      - file: src/graph_theory/sample_notebook
+
+
+  - caption: Game Theory
+    numbered: true
+    chapters:
+      - file: src/game_theory/sample_notebook
+
+
+  - caption: Fourier Analysis
+    numbered: true
+    chapters:
+      - file: src/fourier/sample_notebook
+
+
+  - caption: Natural Language Processing
+    numbered: true
+    chapters:
+      - file: src/nlp/sample_notebook
+
+
+  - caption: Generative Artificial Intelligence
+    numbered: true
+    chapters:
+      - file: src/generative/sample_notebook
+
+
+  - caption: Operations Research
+    numbered: true
+    chapters:
+      - file: src/operations_research/sample_notebook
+
+
+  - caption: Scientific Computing
+    numbered: true
+    chapters:
+      - file: src/scientific_computing/sample_notebook
+
+
+  - caption: Applications to Biology and Epidemiology
+    numbered: true
+    chapters:
+      - file: src/app_biology/sample_notebook
+
+
+  - caption: Applications to Finance
+    numbered: true
+    chapters:
+      - file: src/app_finance/sample_notebook
+
+
+  - caption: Applications to Material Science and Physics
+    numbered: true
+    chapters:
+      - file: src/app_physics/sample_notebook

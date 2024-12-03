@@ -1,6 +1,7 @@
 from openai import OpenAI
 import yaml
 import os
+import nbformat
 
 env_path = './env/env.yaml'
 with open(env_path, 'r') as file:
@@ -48,11 +49,11 @@ def obtain_llm_content(title, sections):
 def write_response_file(short_title, response):
 
     os.makedirs(f"./src/{short_title}", exist_ok=True)
-    file_path = f"./src/{short_title}/sample_notebook.md"
-
-    # Write content to the file
-    with open(file_path, "w+", encoding="utf-8") as file:
-        file.write(str(response))
+    file_path = f"./src/{short_title}/sample_notebook.ipynb"
+    notebook = nbformat.v4.new_notebook()
+    notebook['cells'] = [nbformat.v4.new_markdown_cell(response)]
+    with open(file_path, 'w+') as f:
+        nbformat.write(notebook, f)
 
 def main():
 
@@ -75,4 +76,5 @@ def main():
         print(f'Sample notebook for {title} created')
 
 if __name__ == '__main__':
-    main()
+    print('Start ...')
+    # main()
